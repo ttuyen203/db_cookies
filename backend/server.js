@@ -7,7 +7,7 @@ import userRouter from "./src/routes/user.js";
 const app = express();
 
 dotenv.config();
-const PORT = process.env.PORT;
+const port = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
   res.send("Home");
@@ -34,6 +34,6 @@ mongoose
     console.log("Connect failed !");
   });
 
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });
