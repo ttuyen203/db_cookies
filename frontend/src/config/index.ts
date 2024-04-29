@@ -1,3 +1,3 @@
-const BASE_URL = "https://db-cookies.onrender.com";
+const BASE_URL = "https://db-cookies-be.onrender.com";
 
 export { BASE_URL };
